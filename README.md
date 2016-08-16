@@ -15,17 +15,21 @@ All will be easy to integrate to Symfony view, by creating ControllerAction/Rout
 
 Git workflow (`yourName` is the name of the branch, for me `florian`, simply):
 
-1. Create your branch like this `git branch yourName`
-2. Go on it with `git checkout yourName`
-3. Add your modification with `git add --all`
-4. Commit your change with `git push origin yourName`
-5.
+1. Go on master `git checkout master`<br/>
+1.1 Pull the existing change on master `git pull origin master`
+2. Create your branch like this `git branch yourName`
+3. Go on it with `git checkout yourName`
+4. Add your modification with `git add --all`
+5. Commit your change with `git push origin yourName`
+6. Push your change with `git push origin yourName`
 
-Your branch exist so you just have to do the 2, 3, 4 and 5 step.
+Your branch exist so you just have to do everything this execpt the step 2.
 
 Example:
 
 ```
+	git checkout master
+	git pull origin master
 	git branch florian
 	git checkout florian
 	git add --all
