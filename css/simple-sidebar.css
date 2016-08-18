@@ -28,7 +28,7 @@
     right: 200px;
     width: 0;
     height: 100%;
-    padding: 20px;
+    padding: 0px;
     margin-right: -200px;
     overflow-y: auto;
     background: #1d1d1d;
@@ -132,5 +132,10 @@
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+    #sidebar-wrapper {
+        padding: 20px;
+
+
     }
 }
