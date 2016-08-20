@@ -7,6 +7,7 @@
 body {
     overflow-x: hidden;
 }
+
 /* Toggle Styles */
 
 #wrapper {
@@ -20,6 +21,50 @@ body {
 #menu-toggle {
     position: absolute;
     right: 50px;
+}
+#page-content-wrapper a, #page-content-wrapper a:hover{
+    text-decoration: none;
+    color:#555 ;
+}
+
+#menu-toggle .navbar-toggle {
+    display: block;
+    margin: 0;
+    padding-top: 2px;
+    padding-left: 15px;
+    margin-right: 15px;
+}
+
+#menu-toggle .navbar-toggle .icon-bar {
+    background-color: #555;
+}
+#page-content-wrapper span:nth-child(2),#page-content-wrapper span:nth-child(3){
+    transition: all 0.2s ease-in-out;
+
+}
+
+#page-content-wrapper .pushed span:nth-child(2){
+    position: relative;
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+#page-content-wrapper .pushed span:nth-child(3){
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-in-out;
+}
+#page-content-wrapper .pushed span:nth-child(4){
+    display: none;
+
 }
 
 #wrapper.toggled {
@@ -110,36 +155,35 @@ body {
     background: none;
 }
 
-/*@media (min-width: 768px) {*/
-    #wrapper {
-        padding-right: 200px;
-    }
+#wrapper {
+    padding-right: 200px;
+}
 
-    #wrapper.toggled {
-        padding-right: 0px;
-    }
+#wrapper.toggled {
+    padding-right: 0px;
+}
 
-    #sidebar-wrapper {
-        width: 200px;
-    }
+#sidebar-wrapper {
+    width: 200px;
+}
 
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-        padding: 0;
-    }
+#wrapper.toggled #sidebar-wrapper {
+    width: 0;
+    padding: 0;
+}
 
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-        min-height: 75px;
-    }
+#page-content-wrapper {
+    padding: 20px;
+    position: relative;
+    min-height: 75px;
+}
 
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
-    #sidebar-wrapper {
-        padding: 20px;
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+}
 
-    }
-/*}*/
+#sidebar-wrapper {
+    padding: 20px;
+
+}
