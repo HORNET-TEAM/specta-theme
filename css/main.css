@@ -28,13 +28,13 @@
     margin-bottom: 60px;
 }
 
-.box.large img {
+.box.large_box img {
     width: 100%;
     max-width: 100%;
     max-height: 405px;
 }
 
-.box.large .box_title {
+.box.large_box .box_title {
     color: white;
     font-size: 0.9em;
     position: absolute;
@@ -45,7 +45,7 @@
     text-transform: uppercase;
 }
 
-.box.large .box_text {
+.box.large_box .box_text {
     color: white;
     font-size: 1.6em;
     position: absolute;
@@ -55,16 +55,21 @@
     text-transform: uppercase;
 }
 
-.box.small .blank_bg {
+.box.small_box .blank_bg {
     background-color: white;
     height: 190px;
 }
-.box.small img{
+
+.box.small_box img {
     width: 100%;
     height: 200px;
 }
 
-.box.small .blank_bg .box_title {
+.box.small_box .blank_bg .box_title {
     margin: 0;
-
+    font-size: 0.9em;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
 }
