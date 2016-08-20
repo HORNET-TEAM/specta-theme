@@ -20,7 +20,7 @@ Git workflow (`yourName` is the name of the branch, for me `florian`, simply):
 2. Create your branch like this `git branch yourName`
 3. Go on it with `git checkout yourName`
 4. Add your modification with `git add --all`
-5. Commit your change with `git push origin yourName`
+5. Commit your change with `git commit -m "your message"`
 6. Push your change with `git push origin yourName`
 
 Your branch exist so you just have to do everything this execpt the step 2.
