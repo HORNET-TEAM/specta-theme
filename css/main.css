@@ -1,3 +1,5 @@
+
+
 #page-content-wrapper {
     background-color: white;
 }
@@ -72,4 +74,16 @@
     text-decoration: underline;
     font-weight: bold;
     text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    #wrapper, #wrapper.toggled {
+        padding-right: 0 !important;
+    }
+
+    #sidebar-wrapper {
+        right: 280px !important;
+    }
+    #menu-toggle.pushed {
+        right: 140px!important;
+    }
 }
