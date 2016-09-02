@@ -1,8 +1,198 @@
-<html>
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr"> <!--<![endif]-->
 <head>
-	<title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Inclusion des pages HTML -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myaccount.css">
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-	<h1>aa</h1>
+<div id="wrapper" class="toggled">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="#">Accueil</a>
+            </li>
+            <li>
+                <a href="#">SpectaShop</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Nos Valeurs</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Se Connecter</a>
+            </li>
+
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+
+        <a href="#menu-toggle" id="menu-toggle">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </a>
+    </div>
+    <!-- /Sidebar-->
+    <!-- Page Content -->
+    <div class="container">
+    	<div class="row" id="tuile">
+		  	<div class="col-xs-6 col-md-3">
+			    <a href="#" class="thumbnail">
+			    	<img src="http://placehold.it/500x400" onclick="info();">
+			    </a>
+		  	</div>
+		  	<div class="col-xs-6 col-md-3">
+			    <a href="#" class="thumbnail">
+			    	<img src="http://placehold.it/500x400">
+			    </a>
+		  	</div>
+		  	<div class="col-xs-6 col-md-3">
+			    <a href="#" class="thumbnail">
+			    	<img src="http://placehold.it/500x400">
+			    </a>
+		  	</div>
+		  	<div class="col-xs-6 col-md-3">
+			    <a href="#" class="thumbnail">
+			    	<img src="http://placehold.it/500x400">
+			    </a>
+		  	</div>
+		</div>
+
+		<div class="row" id="content1">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="list-group-item">
+					<h2 style="text-align: center; font-weight: bold;">Mes informations personnelles</h2>
+					<h5 style="text-align: center; font-style: italic; color: red;">Les champs obligatoires sont marqués avec le symbole *</h5>
+					<h4>Civilité :*</h4>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Madame
+					</label>
+					<label class="radio-inline">
+					  	<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Monsieur
+					</label>
+					<div class="form-group">
+						<label for="exampleInputName2">Nom*</label>
+					    <input type="text" class="form-control" id="exampleInputName2" placeholder="Nom">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Prénom*</label>
+					    <input type="text" class="form-control" id="exampleInputName2" placeholder="Prénom">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Email*</label>
+					    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email@example.com">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+
+		<div class="row" id="content2">
+			<div class="jumbotron">
+			  <h1>Customer Services</h1>
+			  <p>Bienvenu sur votre nouvelle fonctionnalité, « Customer Service » ! Cette dernière vous offre un espace spécifique, dans le cadre de l’univers de la garantie, pour surveiller et manager votre matériel !</p>
+			  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			</div>
+
+			<div class="col-lg-4">
+				<h3 style="font-weight: bold;">Mon matériel :</h3>
+				<img src="http://placehold.it/200x200">
+				<p>Spectalizer III</p>
+				<p>Puissance : 400W</p>
+			</div>
+
+
+			<div class="col-lg-8">
+				<h4>Température :</h4>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 60%">
+				    <span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">20% Complete (warning)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">10% Complete (danger)</span>
+				  </div>
+				</div>
+				<h4>Humidité :</h4>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 60%">
+				    <span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">20% Complete (warning)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">10% Complete (danger)</span>
+				  </div>
+				</div>
+				<h4>Vibration :</h4>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 60%">
+				    <span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">20% Complete (warning)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">10% Complete (danger)</span>
+				  </div>
+				</div>
+				<h4>Hall Sensor :</h4>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 60%">
+				    <span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">20% Complete (warning)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 20%">
+				    <span class="sr-only">10% Complete (danger)</span>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+    <!-- Fin Page Content -->
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+</script>
 </body>
 </html>
